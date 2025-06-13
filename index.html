@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slide-container">
+        
+
+        <div class="content-box">
+            <h3>Hoverable Sidenav Buttons</h3>
+            <p>Hover over the buttons at the left side navigation to open them.</p>
+
+            <div class="sidenav-buttons">
+                <div class="btn green"></div>
+                <div class="btn blue"></div>
+                <div class="btn red"></div>
+                <div class="btn gray"></div>
+            </div>
+
+            </div>
+
+        
+</body>
+</html>
+<style>
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.slide-container {
+    background-color: white; 
+    width: 90%;
+    max-width: 900px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding-bottom: 50px; 
+    position: relative; 
+}
+.content-box {
+    border: 1px solid #ccc;
+    margin: 0 20px 20px; 
+    padding: 20px; 
+    min-height: 300px; 
+    position: relative; 
+    text-align: left;
+    padding-left: 100px;
+}
+
+.content-box h3 {
+    margin-top: 0; 
+    color: #333; 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.content-box p {
+    color: #555; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+}
+
+.sidenav-buttons {
+    position: absolute; 
+    top: 20px; 
+    left: 0px; 
+}
+
+.sidenav-buttons .btn {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 5px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+}
+
+.sidenav-buttons .btn.green {
+    background-color: #4CAF50; 
+}
+
+.sidenav-buttons .btn.blue {
+    background-color: #2196F3; 
+}
+
+.sidenav-buttons .btn.red {
+    background-color: #F44336; 
+}
+
+.sidenav-buttons .btn.gray {
+    background-color: #607D8B; 
+}
+
+.sidenav-buttons .btn:hover {
+    opacity: 0.8; 
+}
+
+
+</style>
